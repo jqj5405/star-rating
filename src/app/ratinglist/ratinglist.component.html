@@ -1,0 +1,7 @@
+<h3 class="rating-label">Ratings:</h3>
+<section *ngFor="let display of getRatings()">
+  <app-rating [ratings]="display.rate"></app-rating>
+  <h3>{{ display.name }}</h3>
+  <p>{{ display.content }}</p>
+  <hr />
+</section>
